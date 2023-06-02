@@ -53,7 +53,7 @@ def CheckPort443(ip):
                     pass
                 else:
                     sys.stdout.write(f"\n{white}---> {blue}{ip} {white}PORT {green}443 {white}OPEN!")
-                    open("result.txt", "a").write(f"http://{ip}:443\n")
+                    open("result.txt", "a").write(f"https://{ip}:443\n")
             else:
                 sys.stdout.write(f"\n{white}---> {blue}{ip} {white}PORT {red}443 {white}CLOSED!")
         else:
